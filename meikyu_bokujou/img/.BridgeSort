@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<dirinfo>
+<files>
+<item key='body_bg.jpg20140908220802' />
+<item key='boss_room.jpg20140904160020' />
+<item key='boss1.png20140924230634' />
+<item key='boss2.png20140921090937' />
+<item key='game_frame.png20140821135702' />
+<item key='genle_btn_game.png20140905134252' />
+<item key='genle_btn_geinou.png20140905134252' />
+<item key='genle_btn_history.png20140905134252' />
+<item key='genle_btn_science.png20140905134252' />
+<item key='genle_btn_zatugaku.png20140905134252' />
+<item key='lastboss.png20141001094729' />
+<item key='life_mark.png20140912104557' />
+<item key='name_bg.png20140912133919' />
+<item key='next_btn_b.png20141002145930' />
+<item key='next_btn_p.png20141002150132' />
+<item key='next_btn_w.png20140821141534' />
+<item key='prologue_bg.jpg20141002161336' />
+<item key='quiz_bg.jpg20140905144941' />
+<item key='start_btn.png20140903142350' />
+<item key='talk_bg.png20140912134046' />
+<item key='title.png20140821130832' />
+<item key='zako.png20140929201331' />
+<item key='chikin.png20141010092248' />
+<item key='false.png20141010152448' />
+<item key='gameover_bg.jpg20141006190325' />
+<item key='true.png20141010152433' />
+<item key='boss1_2.png20141023160247' />
+<item key='chikin_scel.png20141023163027' />
+<item key='endroll_bg.png20141023163649' />
+<item key='epilogue_bg.jpg20141010154816' />
+<item key='icon.png20141023161153' />
+<item key='player.png20141024164437' />
+<item key='player2.png20141024165446' />
+<item key='talk_bg2.png20141027100803' />
+<item key='zako2.png20140929201331' />
+</files>
+</dirinfo>

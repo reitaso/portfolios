@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #222;
+}
+h1 {
+	display: none;
+}
+#content p.char {
+	width: 205px;
+	height: 615px;
+	overflow: hidden;
+	text-indent: -9999px;
+	outline: none;
+	background-image: url(img/sample.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 86px;
+	left: 365px;
+}
+#content p.maou {
+	background-position: 0 -615px;
+}
+#content p.sister {
+	background-position: 0 -1230px;
+}
+#content .section {
+	background-color: rgba(255,255,255,0.8);
+	padding: 20px 40px;
+	margin: 0 25px;
+	width: 800px;
+	height: 180px;
+	border-radius: 5px;
+	position: absolute;
+	bottom:25px;
+}
+#content .section h2 {}
+#content .section h2,
+#content .section p,
+#content .section ul li,
+#content .section ul.select li a {
+	font-size: 20px;
+	color: #222;
+}
+#content .sister h2 {
+	color: #daa520;
+}
+#content .maou h2 {
+	color: #dc143c;
+}
+#content .yusya h2 {
+	color: #1E90FF;
+}
+#content .nar p {
+	color: #777;
+}
+#content .section p {
+	line-height: 1.8em;
+}
+#content .section h2 {
+	margin-bottom: 7px;
+}
+#content .section ul {
+	list-style-type: none;
+}
+#content .section ul.pager {
+	width: 800px;
+	margin-top: 5px;
+	position: absolute;
+	bottom: 45px;
+}
+#content .section ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#content .section ul.pager li {
+	text-align: center;
+}
+#content .section li.next a,
+#content .section li.prev a {
+	display: block;
+	width: 23px;
+	text-indent: -9999px;
+	position: absolute;
+}
+#content .section li.next a:hover,
+#content .section li.prev a:hover {
+}
+
+#content .section li.next a {
+	background-image: url(img/next.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#content .section li.prev a,
+#content .section ul li a {
+	text-decoration: none;
+}
+#content .section li.prev a {
+	background-image: url(img/back.png);
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+}
+#content .section ul.select {
+	padding-top: 20px;
+}
+#content .section ul.select li {
+	margin: 20px 0;
+	padding-left: 25px;
+	background-image: url(img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 0 center;
+}
+#content .section ul.select li a:hover {
+	color: #888;
+}

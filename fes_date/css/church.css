@@ -1,0 +1,9 @@
+#content {
+	width: 930px;
+	height: 700px;
+	margin: auto;
+	background-color: #fff;
+	background-image: url(img/church.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+}

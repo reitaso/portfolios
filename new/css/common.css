@@ -1,0 +1,140 @@
+/*----------------全体-----------------*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Verdana';
+	color: #333;
+}
+li {
+	list-style-type: none;
+}
+body {
+	background-image: url(../images/back.png);
+	background-repeat: no-repeat;
+}
+
+img {
+	vertical-align: bottom;
+	border: none;
+}
+a {
+	text-decoration: none;
+	display: block;
+	color: #175560;
+	font-weight: 700;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 20px;
+}
+h2,
+h3 {
+	color: #333;
+}
+main {
+	padding: 20px ;
+	padding-bottom: 50px;
+	margin:0 auto;
+	width: 1000px;
+}
+	main section{
+		width: 1000px;
+	}
+em {
+	color: #ff6ea1;
+}
+main h2,
+main h3 {
+	font-weight: normal;
+	color: #478895;
+}
+/*---共通--*/
+#artist,
+#name1,
+#name2,
+#lot,
+#day1,
+#day2,
+#map,
+#success,
+#artiststage {
+	padding: 15px;
+	border: #717171 1px solid;
+	border: 1px solid #bbb;
+	border-radius: 10px;
+	background-color: white;
+}
+#artist,
+#lot,
+#day1,
+#day2,
+#map,
+#success,
+#artiststage {
+	width: 1000px;
+	margin: 50px auto;
+}
+/*----------------------------
+header
+----------------------------*/
+header {
+	background-image: url(../images/head.png);
+	background-repeat: repeat-x;
+}
+h1 {
+	width: 200px;
+	margin: 0px 20px 10px;
+}
+.gnavi {
+	width: 850px;
+	margin: auto;
+	overflow: hidden;
+}
+.gnavi a {
+	float: left;
+	width: 170px;
+	text-align: center;
+	padding: 10.5px 0;
+	background-image: url(../images/list.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+.gnavi a:hover {
+	background-image: url(../images/liston.png);
+	background-repeat: no-repeat;
+	display: block;
+}
+.line {
+	width: 100%;
+	background-image: url(../images/line.png);
+	background-repeat: repeat-x;
+}
+/*------------------------
+footer
+-------------------------*/
+#footer {
+	background-color: #9babc5;
+	padding: 20px;
+}
+#footer p {
+	text-align: center;
+	font-size: 12px;
+	padding: 10px;
+}
+#attention h2{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+#attention li {
+	list-style-type: square;
+	margin-left: 50px;
+}
+#attention {
+	padding: 20px;
+	font-size: 14px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	background-color: white;
+}

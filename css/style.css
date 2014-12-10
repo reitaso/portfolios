@@ -1,0 +1,249 @@
+/*------------
+全体
+-------------*/
+* {
+	padding: 0; 
+	margin: 0;
+}
+li {
+	list-style-type: none;
+}
+h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+section {
+	padding: 100px 0 80px;
+}
+a:hover {
+	color: #264348;
+}
+a {
+	color: white;
+}
+h2 a:hover {
+	color: white;
+}
+h1,
+.gnavi li,
+h2 {
+	font-family: 'Courier';
+}
+/*------------------------
+header
+------------------------*/
+header {
+	background-image: url(../images/head.png);
+	background-repeat: repeat-x;
+	height: 90px;
+	padding: 10px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index:10;
+	position: fixed;
+	text-shadow: rgba(148,201,209,0.5); 
+}
+.gnavi li {
+	width: 100px;
+	border-left: 1px #44656b solid;
+	float: left;
+	text-align: center;
+	text-shadow: 0 2px 1px #50b4c3; 
+}
+.gnavi a,
+#plofile a {
+	text-decoration: none;
+}
+.gnavi a:hover,
+#plofile a:hover {
+	text-decoration: underline;
+  	text-decoration-color: red;
+}
+.gnavi li:first-child {
+	border-left: none;
+}
+.gnavi {
+	*zoom: 1;
+	width: 405px;
+	margin: 20px auto;
+}
+h1 {
+	width: 200px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: white;
+	text-shadow: 0 2px 1px #50b4c3; 
+}
+.gnavi:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+/*---------------------------------
+main
+---------------------------------*/
+main {
+	margin: auto;
+	background-color: #f1fdff;
+}
+
+main section:last-child {
+	border-bottom: none;
+}
+#art ul img,
+#site ul img {
+	border-radius: 5px;
+	border: 5px solid #43aeb2; 
+	width: 143px;
+	/*-マウスオーバーでゆっくりborder色変わる-*/
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	float: left;
+	overflow: hidden;
+	margin-right: 10px;
+}
+#art li,
+#site li {
+	height: 150px;
+	width: 350px;
+	font-size: 14px;
+	float: left;
+	padding: 10px;
+}
+#art ul,
+#site ul {
+	overflow: hidden;
+	width: 750px;
+	margin: auto;
+}
+main ul img {
+	width: 143px;
+}
+#site ul img:hover,
+#art  ul img:hover {
+	border: 5px solid #a8eaf6; 
+}
+/*-----plofile----*/
+#plofile {
+	background-color: #5db5ed;
+	color: white;
+	padding-top: 200px;
+	background-image: url(../images/kumo.png);
+	background-position: 10% 50%;
+	background-repeat: repeat-x;
+	text-shadow: 0 2px 1px #58a2d1; 
+}
+#plofile li {
+	font-weight: 100;
+}
+#plofile h2 a:hover {
+	text-decoration: none;
+}
+.pro {
+	width: 350px;
+	margin: auto;
+}
+.pro em {
+	font-size: 14px;
+	padding-left: 10px;
+}
+.myname {
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+.twitter {
+	text-indent: -3.8em;
+	padding-left: 3.8em;
+}
+/*------site------*/
+#site {
+	background-color: #a9e6cd;
+	background-image: url(../images/leaf2.png),
+					  url(../images/leaf.png),
+					  url(../images/kusa.png);
+	background-position: right bottom, 
+						 0 15%,
+						 top left;
+	background-repeat: no-repeat,
+						no-repeat,
+						repeat-x;
+}
+#site h2 {
+	margin-top: 100px;
+}
+#site a,
+#site {
+	color: #416757;
+}
+/*------art------*/
+#art {
+	background-color: #62d9ff;
+	color: white;
+	background-image: url(../images/nami.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	position: relative;
+	/*
+	border-style: solid;
+	border-width: 37px 0 0;
+	-moz-border-image: url(../images/nami.png) 37 0 36 0 repeat;
+	-webkit-border-image: url(../images/nami.png) 37 0 0 repeat;
+	-o-border-image: url(../images/nami.png) 37 0 36 0 repeat;
+	border-image: url(../images/nami.png) 37 0 36 0 fill repeat;
+	*/
+}
+
+#art ul {
+	position: relative;
+	z-index: 1;
+}
+#art h2 {
+	padding-top: 30px;
+}
+#art:before {
+	content: url(../images/fish.png);
+	position: absolute;
+	bottom: 20%;
+	left: -2%;
+	z-index: 0;
+}
+#art a,
+#art {
+	color: #2a4f5b;
+}
+/*-----contact-----*/
+#contact {
+	background-color: #364043;
+	background-image: url(../images/house.png),
+					 url(../images/house2.png);
+	background-position: bottom,
+						top left;
+	background-repeat: repeat-x;
+	color: white;
+	padding: 200px 0 200px;
+}
+#contact p {
+	width: 600px;
+	margin: auto;
+}
+.comment,
+.name {
+	border: 1px #44656b solid;
+	margin: 5px auto;
+}
+.comment {
+	height: 300px;
+}
+.name {
+	height: 20px;
+}
+.gotop {
+	text-align: center;
+	padding-top: 80px;
+}
+.not {
+	padding-top: 10px;
+	font-size: 14px;
+}

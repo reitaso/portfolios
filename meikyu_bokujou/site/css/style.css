@@ -1,0 +1,332 @@
+@font-face {
+   font-family: yasasisa;
+   src: url('../font/やさしさゴシック手書き.woff') format("woff");
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: none;
+}
+
+
+
+/*====================
+        BODY
+====================*/
+
+body{
+    background-color: #b2e1f3;
+    background-image: url(../img/background.jpg) ;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+}
+
+h2, h3, p, li, a {
+    font-family: 'yasasisa';
+}
+
+p, li, a{
+    font-size: 18px ;
+    line-height: 28px ;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 36px ;
+    margin-bottom: 20px ;
+}
+
+h3{
+    font-size: 26px ;
+}
+
+#contents {
+    
+}
+
+.float_box {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+/*====================
+        HEADER
+====================*/
+
+#header {
+    height: 500px;
+    margin-bottom: 40px;
+    background-image: url(../img/body_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#header div {
+    width: 960px;
+    height: 400px;
+    
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#header div img{
+    display: block;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.to_game {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.to_game a {
+    background-image: url(../img/start_btn.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 400px;
+    height: 53px;/*74px*/
+    padding-top: 21px;
+    margin: 0 auto;
+    font-size: 32px;
+    
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.to_game a:hover {
+    color: rgb(255,240,0);
+}
+
+
+
+/*====================
+        NAVI
+====================*/
+
+#nav {
+    display: block;
+    width: 200px;
+    height: 720px;
+    padding: 40px 0px;
+    float: left;
+    
+    position: relative;
+}
+
+#nav li {
+    background-image: url(../img/material_48_0.gif);
+    background-repeat: no-repeat;
+    width: 197px;
+    margin: 0 auto;
+    
+    position: relative;
+    z-index: 2;
+}
+
+#nav li:before {
+    background-image: url(../img/list_bar.png);
+    
+    
+    position: relative;
+    z-index: 1;
+}
+
+#nav li a {
+    display: block;
+    height: 31px;
+    padding-top: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.7);
+}
+
+
+
+
+/*====================
+        MAIN
+====================*/
+
+#main {
+    display: block;
+    width: 680px ;/*760px*/
+    padding: 40px ;
+    margin-left: 200px;
+    margin-top: -800px;
+    float: left;
+}
+
+#main>section {
+    margin-bottom: 100px ;
+}
+
+#story p,
+#chalacter>section,
+#staff>section{
+    margin: 0 30px 60px 30px ;
+}
+
+#story p{
+    line-height: 40px;
+    font-size: 22px;
+}
+
+
+
+#rules img {
+    margin-bottom: 10px;
+}
+
+#rules div {
+    margin-bottom: 40px;
+    opacity: 0
+}
+
+
+
+#chalacter>section {
+    background-color: #fff;
+    min-height: 350px;
+    padding: 30px;
+    margin-bottom: 100px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    
+    /* JS */
+    opacity: 0;
+    position: relative;
+    top: -30px;
+    right: -200px;
+}
+
+#chalacter>section .wa {
+    background-color: #b2e1f3;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5);
+    
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+#chalacter img {
+    display: block;
+    width: 250px;
+    float: left;
+    margin-top: 40px;
+}
+
+#chalacter div {
+    width: 270px;
+    float: left;
+}
+
+#chalacter div h3 {
+    background-color: #fff;
+}
+
+#chalacter p {
+    padding-top: 6px;
+    line-height: 26px;
+    min-height: 140px;
+
+    background-color: #fff;
+    background-image: linear-gradient(rgba(38, 147, 255, 0.3) .1em, transparent .1em);/*original: rgba(134, 194, 255, 0.3*/
+    background-size: 100% 1.5em;
+}
+
+
+
+#staff ul{
+    margin: 10px 0 0 30px ;
+}
+
+#main .to_game {
+	text-align: left;
+}
+
+#main .to_game a {
+	margin: 0;
+	text-align: center;
+}
+
+
+
+/*====================
+        FOOTER
+====================*/
+
+.footer_bg {
+    background-image: url(../img/footer.png) ;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+}
+
+#footer{
+    color: #fff;
+    width: 960px;
+    height: 70px;
+    padding-top: 130px;
+    margin: 0 auto;
+}
+
+#footer .cgweb {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#footer .pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 55px;
+}
+
+#footer .pagetop a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #005a42;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+#footer .pagetop a:hover {
+    opacity: 0.9;
+}

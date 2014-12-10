@@ -1,0 +1,455 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.on {
+	opacity: 1!important;
+	display: block!important;
+	pointer-events: auto !important;
+}
+.off {
+	display: none!important;
+}
+
+body {
+	background-image: url(img/back.jpg);
+	background-repeat: repeat;
+	background-size: 100% 100%;
+	height: 100%;
+}
+h1 {
+	display: none;
+}
+
+#main {
+	width: 930px;
+	height: 700px;
+	margin: 0 auto;
+	position: relative;
+}
+.seen {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+}
+#main #op,
+#main #ed {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+}
+.seen .select {
+	display: none;	
+}
+/*==========
+
+ 背景画像
+ 
+==========*/
+
+#seen2.on,
+#seen3.on,
+#seen4.on,
+#seen5.on {
+	background-image: url(img/battle.jpg);
+	background-repeat: no-repeat;
+}
+#main .room {
+	background-image: url(img/room3.jpg);
+	background-repeat: no-repeat;
+}
+#main .church {
+	background-image: url(img/church.jpg);
+	background-repeat: no-repeat;
+}
+#main .battle {
+	background-image: url(img/battle.jpg);
+	background-repeat: no-repeat;
+}
+#main .dark {
+	background-image: url(img/dark.jpg);
+	background-repeat: no-repeat;
+}
+
+/*===============
+
+ オープニング
+
+===============*/
+
+#main #op {
+	background-image: url(img/op_title.jpg);
+}
+#main .op p {
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0px 0px 4px blue;
+	position: absolute;
+	top: 500px;
+	left: 390px;
+	cursor: pointer;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
+	transition: color 0.5s linear 0;
+}
+#main .op p:hover {
+	color: #FF0;
+	text-shadow: 0px 0px 4px #fff;
+}
+
+/*===============
+
+ エンディング
+
+===============*/
+
+#main #ed {
+	background-image: url(img/ed.jpg);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+#main #ed h2,
+#main #ed dl {
+	text-align: center;
+}
+#main .mmm {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	padding: 800px 0 900px 0;
+	position: relative;
+}
+#main #ed h2 {
+	font-size: 22px;
+	font-weight: normal;
+	color: white;
+	text-shadow: 0 0 5px #000;
+	margin: 30px 0;
+}
+#main #ed dl {
+	font-size: 15px;
+	color: #fff;
+}
+#main #ed dl dt {
+	margin-top: 50px;
+	font-size: 18px;
+}
+#main #ed dl dt.bun {
+	text-shadow: 0 0 5px #F33;
+}
+#main #ed dl dt.html {
+	text-shadow: 0 0 5px #06F;
+}
+#main #ed dl dt.css {
+	text-shadow: 0 0 5px #FC0;
+}
+#main #ed dl dt.js {
+	text-shadow: 0 0 5px skyblue;
+}
+#main #ed dl dt.chard {
+	text-shadow: 0 0 5px #F09;
+}
+#main #ed dl dt.opd {
+	text-shadow: 0 0 5px red;
+}
+#main #ed dl dt.back {
+	text-shadow: 0 0 5px #0C0;
+}
+#main #ed dl dt.layout {
+	text-shadow: 0 0 5px #609;
+}
+#main #ed dl dt.special {
+	text-shadow: 0 0 5px #F00;
+}
+#main #ed dl dd {
+	margin: 5px 0;
+}
+#main #ed .mmm ul {
+	position: absolute;
+	 bottom: 0;
+	 left: 430px;
+	 color: #fff;
+}
+/*#main #ed p {
+	color: white;
+	position: absolute;
+	bottom: 15px;
+	left: 35px;
+	cursor: pointer;
+}*/
+
+/*===============
+
+ キャラクター設定
+
+===============*/
+
+.seen p.char {
+	display: none;
+}
+
+.seen.on p.char {
+	display: block;
+	width: 100%;
+	height: 700px;
+	text-indent: -9999px;
+	outline: none;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: auto 100%;
+}
+
+
+/*キャラクター表情*/
+
+.seen p.char.maou_normal {
+	background-image: url(img/maou_image.png);
+}
+.seen p.char.maou_k {
+	background-image: url(img/maou_k.png);
+}
+.seen p.char.maou_o {
+	background-image: url(img/maou_o.png);
+}
+.seen p.char.sister_normal {
+	background-image: url(img/sister.png);
+}
+.seen p.char.sister_u {
+	background-image: url(img/sister_u.png);
+}
+.seen p.char.sister_w {
+	background-image: url(img/sister_w.png);
+}
+
+
+/*===============
+
+   台詞
+
+===============*/
+
+.seen .serihu {
+	opacity: 0;
+	/*transition: opacity 1s linear 0;*/
+	background-color: rgba(255,255,255,0.8);
+	padding: 20px 40px;
+	margin: 0 25px;
+	width: 800px;
+	height: 180px;
+	border-radius: 5px;
+	position: absolute;
+	bottom:25px;
+	background-image: url(img/decoration.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	pointer-events:none;
+}
+.seen .serihu h2 {
+	margin-top: 3px;
+	margin-bottom: 5px;
+	clear: both;
+}
+
+.seen .serihu h2,
+.seen .serihu p,
+.seen .serihu ul li,
+.seen .serihu ul.select li a {
+	font-size: 20px;
+	color: #222;
+}
+
+/* シスター文字色 */
+.seen .sister h2,
+.seen .sister_w h2,
+.seen .sister_u h2,
+.seen .sister_normal h2 {
+	color: #d8918a;
+}
+
+/* 魔王文字色 */
+.seen .maou h2,
+.seen .maou_normal h2,
+.seen .maou_k h2 {
+	color: #dc143c;
+}
+
+/* 俺の文字色 */
+.seen .ore h2 {
+	color: #1E90FF!important;
+}
+
+.seen .serihu p {
+	line-height: 1.8em;
+}
+.seen .nar p:first-child,
+.seen .playing p {
+	margin-top: 30px;
+}
+.seen .nar p,
+.seen .playing p {
+	color: #666;
+}
+.seen .playing p,
+.seen .bad {
+	text-align: center;
+}
+.seen .nar p {
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+.seen p.bikki,
+.seen p.beki,
+.seen .bad p,
+.seen p.end {
+	text-indent: -9999px;
+}
+
+.seen p.bikki,
+.seen p.beki{
+	background-repeat: no-repeat;	
+}
+
+/*ビキッ画像*/
+.seen p.bikki {
+	padding: 60px 0;
+	background-image: url(img/bikki.png);
+	background-position: center 60px;
+}
+
+/*べキッ画像*/
+.seen p.beki {
+	padding: 40px 0;
+	background-image: url(img/beki.png);	
+	background-position: center 30px;
+}
+
+/*バッドエンド画像*/
+.seen .bad p {
+	padding: 70px 0;
+	background-image: url(img/badend.png);
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+/*ジ・エンド画像*/
+.seen p.end {
+	padding: 70px 0;
+	background-image: url(img/theend.png);
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.seen .serihu ul {
+	list-style-type: none;
+}
+
+/*=================
+
+ ページコントロール
+
+=================*/
+
+ul.pager {
+	width: 800px;
+	position: absolute;
+	top: 621px;
+	left: 50%;
+	margin-left: -400px;
+	*zoom: 1;
+	overflow: hidden;
+}
+ul.pager li {
+	list-style: none;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+ul.pager li.next {
+	float: right;
+}
+ul.pager li.prev {
+	float: left;
+}
+ul.pager li.next a,
+ul.pager li.prev a {
+	display: block;
+	border-radius: 15px;
+	background: #aaa;
+	transition: background 0.5s linear 0;
+	width: 30px;
+	height: 30px;
+	font-size: 22px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+ul.pager li.next a:hover,
+ul.pager li.prev a:hover {
+	background: #039;
+}
+
+.seen .serihu li.next a {
+	background-image: url(img/next.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.seen .serihu li.prev a,
+.seen .serihu ul li a {
+	text-decoration: none;
+}
+.seen .serihu li.prev a {
+	background-image: url(img/back.png);
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+}
+
+/*=====================
+
+　コンティニュー,分岐
+
+======================*/
+
+.seen ul.contine li,
+.seen .serihu ul.root li {
+	width: 250px;
+	margin-bottom: 20px;
+	padding-left: 25px;
+	list-style: none;
+	background-image: url(img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	cursor: pointer;
+}
+
+.seen ul.contine li {
+	margin-left: -25px;
+	
+}
+.seen .serihu ul.root {
+	width: 600px;
+	margin-top: 13px;
+	position: relative;
+}
+
+.seen .serihu ul.root li:nth-child(2n) {
+	margin-bottom: 0;
+}
+.seen .serihu ul.root li:nth-child(3n) {
+	position: absolute;
+	top: 0;
+	right: 30px;
+}
+.seen .serihu ul.root li:nth-child(4n) {
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+}
+.seen ul.contine li:hover,
+.seen .serihu ul.root li:hover {
+	color: #b6890e;
+}
+

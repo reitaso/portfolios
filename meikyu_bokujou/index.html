@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+	    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/common.js"></script>
+    <title>MOW出れない!?迷Q牧場</title>
+</head>
+<body style="-webkit-user-select: none;">
+	
+		<!----------#title---------->
+        <header id="title" class="seen">
+            <h1><img src="img/title.png" alt="MOWでれない！？迷宮牧場"></h1>
+            <p class="startBtn">Start</p>
+        </header>
+    <!----------end #title---------->
+
+
+    <!----------main---------->
+        <main>
+	        <div id="gameFrame">
+	             
+	        <!----------#narration---------->
+	        	<section id="opening" class="seen">
+							<ul class="talk">
+								<li>突然ですがこれからあなたに扮した主人公でクイズに答えてもらいます。</li>
+								<li>何故クイズかって？我が輩の気分です。</li>
+								<li>クイズという名のゲームなので、<strong>GAMEOVER</strong>があります。</li>
+								<li><strong>GAMEOVER</strong>になるとあなたに扮した主人公が大変なことになります。</li>
+								<li class="big1">えらいことになります。</li>
+								<li class="big2">でーれーことになります。</li>
+								<li><strong>クリアできなかったら突然変異で頭だけ牛になってしまううううううう！！</strong></li>
+								<li>くらいのテンションでやってください。</li>
+								<li>ちなみに敵として登場する生物は全部<span class="big3">牛</span>です。</li>
+								<li>誰がなんと言おうと<span class="big4">牛</span>です。</li>
+								<li>それでは、お楽しみください。</li>
+							</ul>
+							<p class="next white">次へ</p>
+	        	</section>
+					<!----------end #narration---------->
+				
+					<!----------#prologue---------->
+						<section id="prologue" class="seen">
+							<ul class="talk">
+								<li class="chara_nare">
+									<ul>
+										<li class="serif">さて、俺は今、草だらけの場所に立っているのですが、<br>
+										一言で俺の心境を説明する。</li>
+									</ul>
+								</li>
+								<li class="chara_you2">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「ここどこだ!?」</li>
+									</ul>
+								</li>
+								<li class="chara_bird2">
+									<ul>
+										<li class="chara">?</li>
+										<li class="serif">「そこのやかましい人間〜。」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">・・・！</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「ようこそ我が輩の牧場へ〜。」</li>
+									</ul>
+								</li>
+								<li class="chara_you2">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">・・・しゃ、喋った!?</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「じゃあさっそくいきましょうか。」</li>
+									</ul>
+								</li>
+								<li class="chara_you2">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「え・・・ちょ！待て待て待て！」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「はいー？」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「いやはいー？じゃねぇよなんでニワトリが喋ってるんだよてかどこいくんだよあとお前誰だよ」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「鳥頭なのでそんないっぱい聞かないでください忘れますよ」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「それ脅しか？」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「いいからいいから、ここから出る道を知ってるのでいきましょ」</li>
+									</ul>
+								</li>
+								<li class="chara_you2">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">（なんなんだ一体・・・）</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「おい鶏。」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「なんですか人間」</li>
+									</ul>
+								</li>
+								<li class="chara_you2">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「にッ･･･どこいくんだ」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「もしかしてワタシより鳥頭ですか？んん？」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「食うぞコラ」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「まったくこれだから人間は･･･<br>
+										さっき言ったとおり出る道です。要は出口ですよ、出口。」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「・・・はぁ」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「なんですかその反応。信用してないんですか」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「いきなり現れたヤツ、<br>ましてやしゃべるニワトリを誰が信用するんだ。」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「これだから人間は･･･」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「焼くぞ。」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「まぁいいでしょう。我が輩は心が広いので大目に見てあげましょう。」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">（いちいち腹立つな・・・）</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「ところで、まさかタダで出口教えてもらえるなんて、思ってないですよね？」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「･･･ん？」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「あらあら、Give&Takeなんて人間界でも常識でしょ。じょ・う・し・き☆」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">(あ〜〜〜〜ナタとかその辺に落ちてねぇかなぁ〜〜)</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「でも、我が輩は優しいので、クイズに答えるだけでいいですよ？」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「あぁ？クイズ？」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「いえす、クイズおういえ。<br>
+										どうします？この生い茂った牧草地のど真ん中で餓えたって、我が輩は一向に構いませんよ？」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「ったく・・・わかった。やるよ。」</li>
+									</ul>
+								</li>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「やる、っていいましたね？確かに聞き入れました。」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">(あ〜そうですよね〜地雷ですよね〜)</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「では挑戦していただきましょう人間！あなたに出題される問題は全５問！
+			見事全問正解できればこの進んでいるかも不明な果てない牧草地から出られる道筋を見つけることができます！」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">しかーし！不正解を計３回してしまった場合･･･<br>
+										GAMEOVEEEEER!!この草の世界から二度と出ることはできませーーーーん!!</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「それでは、いってらっしゃい。」</li>
+									</ul>
+								</li>
+								<li class="chara_nare">
+									<ul>
+										<li class="serif big5">ドンッ!</li>
+									</ul>
+								</li>
+								<li class="chara_you2">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「え、ちょ!?」</li>
+									</ul>
+								</li>
+								<li class="chara_nare">
+									<ul>
+										<li class="serif big6">ガサガサァ</li>
+									</ul>
+								</li>
+								<li class="chara_you2">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「いってぇな！急に草むらに突き飛ばしやがって！」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「・・・ともあれ、あんなニワトリになめられてんじゃあ人間様として威厳が失われるからな。」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「よっし。そのクイズとやら、やってやるぜ！」</li>
+									</ul>
+								</li>
+								<li class="chara_nare">
+									<ul>
+										<li class="serif">ジャンルを選択してください。</li>
+									</ul>
+								</li>
+							</ul>
+							<ul id="genleSelect" class="off">
+								<li class="geinou"><img src="img/genle_btn_geinou.png"></li>
+								<li class="game"><img src="img/genle_btn_game.png"></li>
+								<li class="zatugaku"><img src="img/genle_btn_zatugaku.png"></li>
+								<li class="history"><img src="img/genle_btn_history.png"></li>
+								<li class="science"><img src="img/genle_btn_science.png"></li>
+							</ul>
+							<p class="next black">次へ</p>
+						</section>
+					<!----------end #prologue---------->
+					
+					<!----------#quiz---------->
+						<section id="quiz" class="seen">
+							<ul class="lifepoint">
+								<li><img src="img/life_mark.png"></li>
+								<li><img src="img/life_mark.png"></li>
+								<li><img src="img/life_mark.png"></li>
+							</ul>
+							<section id="geinou" class="genle">
+								<div class="quiz1">
+									<h2>第一問！</h2>
+									<dl class="question">
+										<dt>世界の果てまでイッテQ!にレギュラー出演しているNEWSのメンバーは?</dt>
+										<dd><span>1.</span>小山慶一郎</dd>
+										<dd><span>2.</span>加藤シゲアキ</dd>
+										<dd><span>3.</span>増田貴久</dd>
+										<dd class="true"><span>4.</span>手越祐也</dd>
+									</dl>
+								</div>
+								<div class="quiz2">
+									<h2>第二問！</h2>
+									<dl class="question">
+										<dt>HEY!HEY!HEY!の司会をしているお笑いコンビは?</dt>
+										<dd><span>1.</span>バナナマン</dd>
+										<dd><span>2.</span>とんねるず</dd>
+										<dd class="true"><span>3.</span>ダウンタウン</dd>
+										<dd><span>4.</span>さまぁ～ず</dd>
+									</dl>
+								</div>
+								<div class="quiz3">
+									<h2>第三問！</h2>
+									<dl class="question">
+										<dt>SMAPのメンバーで最年長は中居正広ですが最年少は?</dt>
+										<dd><span>1.</span>草なぎ剛</dd>
+										<dd><span>2.</span>木村拓哉</dd>
+										<dd><span>3.</span>稲垣吾郎</dd>
+										<dd class="true"><span>4.</span>香取慎吾</dd>
+									</dl>
+								</div>
+								<div class="quiz4">
+									<h2>第四問！</h2>
+									<dl class="question">
+										<dt>AKB48のコンセプトは?「○○○○○○アイドル」</dt>
+										<dd><span>1.</span>からんでくる</dd>
+										<dd class="true"><span>2.</span>会いにいける</dd>
+										<dd><span>3.</span>よくしゃべる</dd>
+										<dd><span>4.</span>めっちゃ多い</dd>
+									</dl>
+								</div>
+								<div class="quiz5">
+									<h2>第五問！</h2>
+									<dl class="question">
+										<dt>「欧米か」のギャグで有名な人気お笑いコンビは?</dt>
+										<dd><span>1.</span>サンドウィッチマン</dd>
+										<dd><span>2.</span>ハリセンボン</dd>
+										<dd><span>3.</span>オードリー</dd>
+										<dd class="true"><span>4.</span>タカアンドトシ</dd>
+									</dl>
+								</div>
+							</section>
+							<!-- end geinou -->
+							
+							<section id="game" class="genle">
+								<div class="quiz1">
+									<h2>第一問！</h2>
+									<dl class="question">
+										<dt>ドラえもんの好物はどらやき、では妹のドラミちゃんの好物は?</dt>
+										<dd><span>1.</span>あんぱん</dd>
+										<dd><span>2.</span>ドーナツ</dd>
+										<dd class="true"><span>3.</span>メロンパン</dd>
+										<dd><span>4.</span>サバの味噌煮</dd>
+									</dl>
+								</div>
+								<div class="quiz2">
+									<h2>第二問！</h2>
+									<dl class="question">
+										<dt>2009年に「単独でもっとも多くのキャラクター数を誇るアニメ」として、<br>
+										ギネスにより世界記録に認定された作品は?</dt>
+										<dd><span>1.</span>ドラえもん</dd>
+										<dd><span>2.</span>クレヨンしんちゃん</dd>
+										<dd><span>3.</span>ポケットモンスター</dd>
+										<dd class="true"><span>4.</span>アンパンマン</dd>
+									</dl>
+								</div>
+								<div class="quiz3">
+									<h2>第三問！</h2>
+									<dl class="question">
+										<dt>次のうちスクウェアエニックスのゲームでないものは?</dt>
+										<dd><span>1.</span>ドラゴンクエスト</dd>
+										<dd><span>2.</span>ファイナルファンタジー</dd>
+										<dd class="true"><span>3.</span>パズル&ドラゴンズ</dd>
+										<dd><span>4.</span>キングダムハーツ</dd>
+									</dl>
+								</div>
+								<div class="quiz4">
+									<h2>第四問！</h2>
+									<dl class="question">
+										<dt>アニメ「クレヨンしんちゃん」の舞台といえば?</dt>
+										<dd><span>1.</span>葛飾</dd>
+										<dd><span>2.</span>葛西</dd>
+										<dd class="true"><span>3.</span>春日部</dd>
+										<dd><span>4.</span>小金井</dd>
+									</dl>
+								</div>
+								<div class="quiz5">
+									<h2>第五問！</h2>
+									<dl class="question">
+										<dt>ゲーム「FINAL FANTASY」に登場する、<br>プレイヤーを乗せて走る足の速い鳥といえば?</dt>
+										<dd><span>1.</span>サボテンダー</dd>
+										<dd><span>2.</span>トンベリ</dd>
+										<dd><span>3.</span>モーグリ</dd>
+										<dd class="true"><span>4.</span>チョコボ</dd>
+									</dl>
+								</div>
+							</section>
+							<!-- end game -->
+							
+							<section id="zatugaku" class="genle">
+								<div class="quiz1">
+									<h2>第一問！</h2>
+									<dl class="question">
+										<dt>パイとクリームを何重にも重ねて焼いたフランス風ケーキを何という?</dt>
+										<dd class="true"><span>1.</span>ミルフィーユ</dd>
+										<dd><span>2.</span>クロワッサン</dd>
+										<dd><span>3.</span>活断層</dd>
+										<dd><span>4.</span>ティラミス</dd>
+									</dl>
+								</div>
+								<div class="quiz2">
+									<h2>第二問！</h2>
+									<dl class="question">
+										<dt>イギリスの通貨単位は次のうちどれ?</dt>
+										<dd><span>1.</span>マルク</dd>
+										<dd class="true"><span>2.</span>ポンド</dd>
+										<dd><span>3.</span>ユーロ</dd>
+										<dd><span>4.</span>ドル</dd>
+									</dl>
+								</div>
+								<div class="quiz3">
+									<h2>第三問！</h2>
+									<dl class="question">
+										<dt>トランプはジョーカーを抜かして何枚ある?</dt>
+										<dd><span>1.</span>48枚</dd>
+										<dd><span>2.</span>50枚</dd>
+										<dd class="true"><span>3.</span>52枚</dd>
+										<dd><span>4.</span>54枚</dd>
+									</dl>
+								</div>
+								<div class="quiz4">
+									<h2>第四問！</h2>
+									<dl class="question">
+										<dt>車の免許は持っているが、全く運転をしていない人を<br>特に「何ドライバー」という?</dt>
+										<dd><span>1.</span>ショートドライバー</dd>
+										<dd class="true"><span>2.</span>ペーパードライバー</dd>
+										<dd><span>3.</span>ルーキードライバー</dd>
+										<dd><span>4.</span>ノットドライバー</dd>
+									</dl>
+								</div>
+								<div class="quiz5">
+									<h2>第五問！</h2>
+									<dl class="question">
+										<dt>じゃんけんでチョキに勝ってグーに負けないのは何?</dt>
+										<dd class="true"><span>1.</span>グー</dd>
+										<dd><span>2.</span>チョキ</dd>
+										<dd><span>3.</span>パー</dd>
+										<dd><span>4.</span>そんなもの無い</dd>
+									</dl>
+								</div>
+							</section>
+							<!-- end zatugaku -->
+							
+							<section id="history" class="genle">
+								<div class="quiz1">
+									<h2>第一問！</h2>
+									<dl class="question">
+										<dt>「最後の晩餐」「モナリザ」で知られるルネッサンスを代表する人物と言えば誰でしょう?</dt>
+										<dd><span>1.</span>ガリレオ・ガリレイ</dd>
+										<dd><span>2.</span>ピカソ</dd>
+										<dd><span>3.</span>ミケランジェロ</dd>
+										<dd class="true"><span>4.</span>レオナルド・ダ・ビンチ</dd>
+									</dl>
+								</div>
+								<div class="quiz2">
+									<h2>第二問！</h2>
+									<dl class="question">
+										<dt>日本で一番高い山は富士山。<br>では日本で一番長い川は一般的に何川と言うでしょう?</dt>
+										<dd><span>1.</span>多摩川</dd>
+										<dd class="true"><span>2.</span>信濃川</dd>
+										<dd><span>3.</span>利根川</dd>
+										<dd><span>4.</span>ナイル川</dd>
+									</dl>
+								</div>
+								<div class="quiz3">
+									<h2>第三問！</h2>
+									<dl class="question">
+										<dt>いい国作ろう○○幕府?</dt>
+										<dd><span>1.</span>室町</dd>
+										<dd><span>2.</span>江戸</dd>
+										<dd class="true"><span>3.</span>鎌倉</dd>
+										<dd><span>4.</span>明治</dd>
+									</dl>
+								</div>
+								<div class="quiz4">
+									<h2>第四問！</h2>
+									<dl class="question">
+										<dt>次のうち「東北地方」に含まれない県名は?</dt>
+										<dd><span>1.</span>秋田県</dd>
+										<dd><span>2.</span>宮城県</dd>
+										<dd><span>3.</span>福島県</dd>
+										<dd class="true"><span>4.</span>新潟県</dd>
+									</dl>
+								</div>
+								<div class="quiz5">
+									<h2>第五問！</h2>
+									<dl class="question">
+										<dt>東日本大震災はいつ起きたか?</dt>
+										<dd><span>1.</span>２０１１年３月１０日</dd>
+										<dd class="true"><span>2.</span>２０１１年３月１１日</dd>
+										<dd><span>3.</span>２０１１年３月１２日</dd>
+										<dd><span>4.</span>２０１１年３月１３日</dd>
+									</dl>
+								</div>
+							</section>
+							<!-- end history -->
+							
+							<section id="science" class="genle">
+								<div class="quiz1">
+									<h2>第一問！</h2>
+									<dl class="question">
+										<dt>夏の大三角の1等星はデネブ、アルタイルと後一つは何でしょう?</dt>
+										<dd><span>1.</span>ヘガ</dd>
+										<dd class="true"><span>2.</span>ベガ</dd>
+										<dd><span>3.</span>ペガ</dd>
+										<dd><span>4.</span>さが</dd>
+									</dl>
+								</div>
+								<div class="quiz2">
+									<h2>第二問！</h2>
+									<dl class="question">
+										<dt>「ヤゴ」は何の幼虫?</dt>
+										<dd class="true"><span>1.</span>トンボ</dd>
+										<dd><span>2.</span>セミ</dd>
+										<dd><span>3.</span>チョウ</dd>
+										<dd><span>4.</span>カブトムシ</dd>
+									</dl>
+								</div>
+								<div class="quiz3">
+									<h2>第三問！</h2>
+									<dl class="question">
+										<dt>人体で最も硬い部分はどこ?</dt>
+										<dd><span>1.</span>鼻</dd>
+										<dd><span>2.</span>骨</dd>
+										<dd><span>3.</span>爪</dd>
+										<dd class="true"><span>4.</span>歯</dd>
+									</dl>
+								</div>
+								<div class="quiz4">
+									<h2>第四問！</h2>
+									<dl class="question">
+										<dt>人間の血管を全て繋げるとおよそどれくらいの距離になるでしょうか?</dt>
+										<dd><span>1.</span>１万メートル</dd>
+										<dd class="true"><span>2.</span>１０万メートル</dd>
+										<dd><span>3.</span>１００万メートル</dd>
+										<dd><span>4.</span>１０００万メートル</dd>
+									</dl>
+								</div>
+								<div class="quiz5">
+									<h2>第五問！</h2>
+									<dl class="question">
+										<dt>次のうち「赤外線」の略称は?</dt>
+										<dd><span>1.</span>UR</dd>
+										<dd><span>2.</span>UV</dd>
+										<dd class="true"><span>3.</span>IR</dd>
+										<dd><span>4.</span>RV</dd>
+									</dl>
+								</div>
+							</section>
+							<!-- end history -->
+						</section>
+					<!----------end #quiz---------->
+					
+					<!----------#epilogue---------->
+						<section id="epilogue" class="seen">
+							<ul class="talk">
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「やったな人間！ここが出口ですよ。」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「なんだったんだあの牛が混ざったみたいなバケモノ共は･･･ってなんで俺より先にいるんだよ。」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「かわいかろぉう？」</li>
+									</ul>
+								</li>
+								<li class="chara_you2">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「死ぬかと思ったわ！」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「あら残念。」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「でも腹チラ女の子はかわいかった！」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「よかったねー。」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「振ったクセに反応薄いなおい。<br>
+										・・・お、街灯が見えるな、タクシーでも拾うか。」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「そうね」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「じゃあ帰るわ。<br>
+										・・・なんだかんだで出口の事礼を言っておくよ。」</li>
+									</ul>
+								</li>
+								<li class="chara_bird">
+									<ul>
+										<li class="chara">ニワトリ</li>
+										<li class="serif">「うむ。じゃあまたね」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「おう。またな」</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">・・・・・・・・・・</li>
+									</ul>
+								</li>
+								<li class="chara_you">
+									<ul>
+										<li class="chara">あなた</li>
+										<li class="serif">「またね!?」</li>
+									</ul>
+								</li>
+								<li class="chara_nare">
+									<ul>
+										<li class="serif">そう振り返った時。そこには既に身の丈以上の牧草が生えていて、今自分が通った道は跡形もなかった。</li>
+									</ul>
+								</li>
+								<li class="chara_nare">
+									<ul>
+										<li class="serif">これにて「MOWでれない!?迷宮牧場」は終了です。お疲れ様でした。</li>
+									</ul>
+								</li>
+								<li class="chara_nare">
+									<ul>
+										<li class="serif">よくぞクリアしてくれました。牛頭にならなくてよかったですね。</li>
+									</ul>
+								</li>
+								<li class="chara_nare">
+									<ul>
+										<li class="serif">ですが、あの敵として出てきたあの牛たち。かわいかろぉう？</li>
+									</ul>
+								</li>
+								<li class="chara_nare">
+									<ul>
+										<li class="serif">え？どうしてあんな見た目かって？</li>
+									</ul>
+								</li>
+								<li class="chara_nare">
+									<ul>
+										<li class="serif">我が輩の趣味ってやつかな？</li>
+									</ul>
+								</li>
+							</ul>
+							<p class="next white">次へ</p>
+						</section>
+					<!----------end #epilogue---------->
+					
+					<!----------#gameover---------->
+						<section id="gameover" class="seen">
+							<div class="inner">
+								<p>残念。<strong>GAMEOVER</strong>です。</p>
+								<p>あなたは、あの牛たちと共に新たな客人を迎える側になってもらいます。<br>
+									もちろん牛頭です。よかったですね。</p>
+								<ul class="continue">
+									<li class="backQuiz">クイズからやり直す</li>
+									<li class="backTitle">タイトルにもどる</li>
+								</ul>
+							</div>
+						</section>
+					<!----------end #gameover---------->
+					
+						<section id="endroll" class="seen">
+							<div class="mmm">
+								<h2>スタッフロール</h2>
+								<dl>
+									<dt>脚本・ポスター</dt>
+									<dd>永溝　涼介</dd>
+									<dt>クイズ監修</dt>
+									<dd>加藤　純一</dd>
+									<dd>中村　拳也</dd>
+									<dt>デザインカンプ・コーディング</dt>
+									<dd>住井　悠樹</dd>
+									<dt>キャラクターデザイン</dt>
+									<dd>西村　美幸</dd>
+									<dd>玉井　くるみ</dd>
+									<dt>背景デザイン</dt>
+									<dd>阿部　拓也</dd>
+									<dd>山口　菜摘</dd>
+									<dd>加藤　純一</dd>
+									<dd>西山　明秀</dd>
+									<dd>高 陽</dd>
+									<dd>呂 昕雨</dd>
+									<dt>Webサイト制作チーム</dt>
+									<dd>山口　菜摘</dd>
+									<dd>木村　好汰</dd>
+									<dd>石川　瑞樹</dd>
+									<dt>SpecialThanks</dt>
+									<dd>講師一同</dd>
+								</dl>
+								<ul class="continue">
+								<li class="backQuiz">クイズからやり直す</li>
+								<li class="backTitle">タイトルにもどる</li>
+							</ul>
+							</div>
+						</section>
+					
+					</div>
+				<!----------end #game_frame---------->
+        </main>
+    <!----------end main---------->
+</body>
+</html>

@@ -1,0 +1,85 @@
+
+.art {
+	width: 1023px;
+	padding-bottom: 200px;
+	}
+.art h2 {
+	padding: 0 30px 110px;
+	}
+.menu {
+	background-image: url(../images/kongou.jpg);
+	background-repeat: no-repeat;
+	padding-top: 30px;
+	}
+.photo {
+	background-color: rgba(255, 255, 255, 0.5);
+
+}
+.arts {
+	width: 970px;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+	background-color: rgba(201, 232, 255, 0.5);
+	border: 1px #18224d solid;
+	position: relative;
+}
+.art li  {
+	float: left;
+	width: 200px;
+	height: 350px;
+	margin:  0 20px 20px;
+	list-style-type: none;
+	font-size: 20px;
+	}
+ul {
+	*zoom: 1;
+	}
+ul:after {
+	clear: both;
+	display: block;
+	content: "";
+		}
+.next,
+.back {
+	position: absolute;
+}
+.next {
+	bottom: 10px;
+	right: 10px;
+}
+.back {
+	bottom: 10px;
+	left: 10px;
+}
+.arts p a {
+	font-size: 25px;
+	font-weight: 200;
+	color: #18224d;
+}
+.arts p a:hover {
+	text-shadow:  0 0 2px #1198ff;
+	color: white;
+}
+a {
+	text-decoration: none;
+}
+/*------マウスオーバーで画像を白く------*/
+
+.arts li a {
+	background-color: #def1ff;
+	display: block;
+	border-radius: 5px;
+}
+.arts img {
+    transition: all 0.3s ease;
+    border: 6px #6fb4ee solid;
+	border-radius: 5px;
+    }
+.arts a:hover img{
+    opacity: 0.7;
+    filter: alpha(opacity=80);
+    -ms-filter: “alpha( opacity=80 )”;
+}
+

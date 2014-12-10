@@ -1,0 +1,7 @@
+<Files ~ "^.(htaccess|htpasswd)$">
+deny from all
+</Files>
+
+Redirect permanent /technossai/technossai_access.html http://www.technosac.jp/technossai/success.html
+
+order deny,allow

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MOWでれない!?~迷Ｑ牧場~</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!------ #ヘッダー ----->
+    <header id="header">
+        <div>
+            <img src="img/title.png" alt="MOWでれない!?~迷Ｑ牧場~">
+            <p class="to_game"><a href="../index.html" target="_blank">ゲームへGO!!</a></p>
+        </div>
+    </header>
+    
+    
+    
+    <div class="float_box clearfix">
+        <!----- #ナビゲーション ----->
+        <nav id="nav">
+            <ul>
+                <li><a href="#story">ストーリー</a></li>
+                <li><a href="#rules">ルール</a></li>
+                <li><a href="#chalacter">キャラクター</a></li>
+                <li><a href="#staff">スタッフ</a></li>
+            </ul>
+        </nav>
+
+
+        <!---- #メイン　------>
+        <main id="main">
+            <!----- #ストーリー ----->
+            <section id="story">
+                <h2>ストーリー</h2>
+                <p>迷い込んだ少年に待つものは、奇怪な案内役と不気味な迷路。</p>
+								<p>突拍子もない展開に降りかかる、異形の障壁。</p>
+								<p>携えるものは2つの盾と、己の身体。</p>
+								<p>常識では考えられない空間に、知識で挑め！</p>
+            </section>
+
+
+
+            <!----- #ルール ----->
+            <section id="rules">
+                <h2>ルール</h2>
+                <div id="rules1">
+                    <img src="img/rules0.png" alt="ジャンル選択画面" title="ジャンル選択画面" width="500px">
+                    <p>まず、「芸能」「ゲーム・アニメ」「雑学」「地理・歴史」「理科」の5つのジャンルから1つ好きな物を選びます。</p>
+                </div>
+                <div id="rules2">
+                    <img src="img/rules1.png" alt="クイズ戦闘画面" title="クイズ戦闘画面" width="500px">
+                    <p>すると、突然敵が襲ってくるのでクイズに答えて敵を倒していきましょう。<br>5回、戦闘に勝つとゲームクリアです。</p>
+                </div>
+                <div id="rules3">
+                    <img src="img/rules2.png" alt="ライフポイント" title="ライフポイント">
+                    <p>クイズに間違えると右上のライフが1つ減ってしまい、ライフが0になるとゲームオーバーになってしまうので気をつけよう！</p>
+                </div>
+                <div id="rules4">
+                    <p>1度クリアしても、違うジャンルに挑戦してみてね☆</p>
+                </div>
+            </section>
+
+
+
+            <!----- #キャラクター ----->
+            <section id="chalacter">
+                <h2>キャラクター</h2>
+                
+                <!-- 主人公 -->
+                <section id="player" class="clearfix">
+                    <div class="wa"></div>
+                    <img src="img/player2.png" alt="主人公">
+                    <div>
+                        <h3>主人公</h3>
+                        <p>文字通り今回の主人公であり、プレイヤーに扮した人物。<br>
+	                        そこらへんにいるような男子学生で、散歩をしていたらなんか迷ってた。<br>
+	                        うろうろしているところ、喋る鶏に出会うところから、今回のお話が始まる。</p>
+                    </div>
+                </section>
+                
+                <!-- 鶏 -->
+                <section id="niwatori" class="clearfix">
+                    <div class="wa"></div>
+                    <img src="img/chikin2.png" alt="鶏">
+                    <div>
+                        <h3>ニワトリ</h3>
+                        <p>客の案内役もとい連行役。大きさは主人公の膝下程度。<br>
+世にも珍しい日本語をしゃべる鶏で、どういう訳か出口を知っている。胡散臭さ満点。<br>
+風体のワリに一人称は「我が輩」。<br>
+今回連れ込まれた迷宮牧場の所有者らしい。鶏のクセに。</p>
+                    </div>
+                </section>
+
+                <!-- 牛 -->
+                 <section id="zako" class="clearfix">
+                    <div class="wa"></div>
+                    <img src="img/zako.png" alt="牛">
+                    <div>
+                        <h3>ハート牛</h3>
+                        <p>敵その１。大きさは主人公と同程度。生息数は三頭牛の1/10とかなり少ない。<br>
+	                        女子力ならぬ雌力をやたら持つプリティな牛だが、チヤホヤされすぎて「おーっほっほっほ!!」とか言いそうなお姫様のような性格になってしまった。<br>
+	                        元人間。</p>
+                    </div>
+                 </section>
+
+                 <!-- 三つ首の牛 -->
+                 <section id="boss1" class="clearfix">
+                    <div class="wa"></div>
+                    <img src="img/boss1.png" alt="三つ首の牛">
+                    <div>
+                        <h3>三頭牛</h3>
+                        <p>敵その２。大きさは主人公の1.5倍程度。牧場内に多く生息。<br>
+	                        所有者が牛の頭数を増やそうとした結果爆発的に産まれてしまったので、3頭が1体にくっつけられたという暗い背景がある。<br>
+	                        元の身体に戻ろうと3頭が日々勉学に励んでいるので、実はインテリ。<br>
+	                        噂だと、そのを暴食して変色した三頭牛がいるそう。<br>
+	                        たぶんミカン食いすぎたら手が黄色くなるとかの類。</p>
+                    </div>
+                 </section>
+
+                 <!-- 牧場主 -->
+                 <section id="boss2" class="clearfix">
+                    <div class="wa"></div>
+                    <img src="img/boss2.png" alt="牧場主">
+                    <div>
+                        <h3>牧場主(仮)</h3>
+                        <p>敵その３。牛のお世話係の女性。牧場に住み込んでいる。<br>
+	                        偶然であった喋る鶏に一目惚れし、愛でるついでにお世話を手伝っている。<br>
+	                        スーパーで買い物等家事全般は彼女が担当している。<br>
+	                        服装はニワトリの趣味。</p>
+                    </div>
+                 </section>
+                 
+                 <!-- ドラゴン -->
+                 <section id="boss3" class="clearfix">
+                    <div class="wa"></div>
+                    <img src="img/lastboss.png" alt="牧場主">
+                    <div>
+                        <h3>ドラゴン</h3>
+                        <p>ラスボス。超こええ。大きさは主人公の5倍。<br>
+	                        色々調べたけど名前はわからなかったが、とりあえず牛らしい。<br>
+	                        雄鶏の産んだ卵を牛が温め、孵化した異形の生物。<br>
+	                        似た生物で「コカトリス」がいるが、関係はない。<br>
+	                        見たり触ったりした人を異形の者に変える能力がある。<br>
+	                        変化させるものは飼い主の意思である程度コントロールできる。</p>
+                    </div>
+                 </section>
+            </section>
+
+
+
+            <!----- #スタッフ----->
+            <section id="staff">
+                <h2>スタッフ</h2>
+                    <section>
+                        <h3>脚本・ポスター</h3>
+                        <ul>
+                            <li>永溝　涼介</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>クイズ監修</h3>
+                        <ul>
+                            <li>加藤　純一</li>
+                            <li>中村　拳也</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>デザインカンプ・コーディング</h3>
+                        <ul>
+                            <li>住井　悠樹</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>キャラクターデザイン</h3>
+                        <ul>
+                            <li>西村　美幸</li>
+                            <li>玉井　くるみ</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>背景デザイン</h3>
+                        <ul>
+                            <li>阿部　拓也</li>
+                            <li>山口　菜摘</li>
+                            <li>加藤　純一</li>
+                            <li>西山　明秀</li>
+                            <li>高　陽</li>
+                            <li>呂 昕雨</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Webサイト制作チーム</h3>
+                        <ul>
+                            <li>山口　菜摘</li>
+                            <li>木村　好汰</li>
+                            <li>石川　瑞樹</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Special Thanks</h3>
+                        <ul>
+                            <li>講師一同</li>
+                        </ul>
+                    </section>
+            </section>
+            
+            <p class="to_game"><a href="../index.html" target="_blank">ゲームへGO!!</a></p>
+        </main>
+    </div>
+    
+    <!----- #フッター ----->
+    <div class="footer_bg">
+        <footer id="footer">
+            <p class="cgweb">東京工学院専門学校 CG,Webクリエーター科</p>
+            <p class="pagetop"><a href="#">▲</a></p>
+        </footer>
+    </div>
+    
+</body>
+</html>

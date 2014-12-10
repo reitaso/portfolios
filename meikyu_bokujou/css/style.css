@@ -1,0 +1,546 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.on {
+	display: block;
+}
+
+.off {
+	display: none;
+}
+
+.fade {
+	opacity: 0;
+}
+
+.eventNone {
+	pointer-events: none;
+}
+
+body {
+  background: #333 url(../img/body_bg.jpg) no-repeat top center;
+  background-size: 100%;
+  position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	width: 980px;
+	height: 600px;
+}
+
+/*========================================
+#title
+========================================*/
+
+#title {
+	z-index: 10;
+}
+
+#title h1 {
+  text-align: center;
+}
+
+#title .startBtn {
+  color: #fff;
+  background: url(../img/start_btn.png) no-repeat center center;
+  width: 520px;
+  height: 95px;
+  margin: auto;
+  margin-top: 20px;
+  line-height: 94px;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 3px 4px 5px #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*========================================
+main
+========================================*/
+
+#gameFrame {
+	background: #000 url(../img/game_frame.png) no-repeat center center;
+	height: 600px;
+	border-radius: 50px;
+}
+
+#opening,
+#prologue,
+#quiz,
+#epilogue,
+#gameover,
+#endroll {
+	width: 910px;
+	height: 530px;
+	position: relative;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-radius: 10px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+/*.next*/
+
+.next {
+	width: 39px;
+	height: 39px;
+	position: absolute;
+	bottom: 10px;
+  right: 20px;
+	z-index: 2;
+	display: block;
+	text-indent: -9999px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+.white {
+	background: url(../img/next_btn_w.png) no-repeat center center;
+}
+
+.black {
+	background: url(../img/next_btn_b.png) no-repeat center center;
+}
+
+/*#prologue.talk,
+	#epilogue.talk*/
+
+.talk {
+	height: 530px;
+}
+
+.talk .chara_img {
+	width: 278px;
+	height: 445px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+.talk ul .chara {
+	color: #fff;
+	background: url(../img/name_bg.png) no-repeat center center;
+	width: 310px;
+	height: 70px;
+	line-height: 55px;
+	text-align: center;
+	position: absolute;
+	bottom: 155px;
+}
+
+.talk .chara_you,
+.talk .chara_you2,
+.talk .chara_bird,
+.talk .chara_bird2,
+.talk .chara_nare {
+	width: 910px;
+	height: 180px;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	font-size: 22px;
+}
+
+
+#prologue .talk .chara_you,
+#prologue .talk .chara_you2,
+#prologue .talk .chara_bird,
+#prologue .talk .chara_bird2,
+#prologue .talk .chara_nare {
+	background: url(../img/talk_bg.png) center center;
+}
+
+#epilogue .talk .chara_you,
+#epilogue .talk .chara_you2,
+#epilogue .talk .chara_bird,
+#epilogue .talk .chara_bird2,
+#epilogue .talk .chara_nare {
+	background: url(../img/talk_bg2.png) center center;
+}
+
+.talk .chara_you:after {
+	background: url(../img/player.png) no-repeat center center;
+	width: 265px;
+	height: 430px;
+	content: "";
+	display: block;
+	position: absolute;
+	top: -250px;
+	right: 0;
+}
+
+.talk .chara_you2:after {
+	background: url(../img/player2.png) no-repeat center center;
+	width: 265px;
+	height: 430px;
+	content: "";
+	display: block;
+	position: absolute;
+	top: -250px;
+	right: 0;
+}
+
+.talk .chara_bird:after {
+	background: url(../img/chikin.png) no-repeat center center;
+	width: 265px;
+	height: 430px;
+	content: "";
+	display: block;
+	position: absolute;
+	top: -250px;
+	right: 0;
+}
+
+.talk .chara_bird2:after {
+	background: url(../img/chikin_b.png) no-repeat center center;
+	width: 265px;
+	height: 430px;
+	content: "";
+	display: block;
+	position: absolute;
+	top: -250px;
+	right: 0;
+}
+
+.talk .serif {
+	color: #252525;
+	margin: 30px 0 0 40px;
+	width: 580px;
+	font-size: 22px;
+	position: relative;
+}
+
+.talk .chara_nare .serif {
+	width: 810px;
+}
+
+li strong,
+p strong {
+	color: red;
+}
+
+
+/*section毎の指定*/
+
+/*==========
+#opening
+==========*/
+main #opening {
+	color: #fff;
+	text-align: center;
+	z-index: 9;
+}
+
+#opening li {
+  width: 910px;
+  line-height: 530px;
+  position: absolute;
+  font-size: 25px;
+}
+
+#opening li.big1 {
+	color: #0cff00;
+	font-size: 40px;
+}
+
+#opening li.big2 {
+	color: #ffde00;
+	font-size: 58px;
+	text-shadow: 0px 0px 5px red, 0px 0px 5px red, 0px 0px 5px red, 0px 0px 5px red, 0px 0px 5px red;
+}
+
+#opening li .big3 {
+	color: #ff6565;
+	font-size: 40px; 
+	font-weight: bold;
+	padding: 0 10px;
+}
+
+#opening li .big4 {
+	color: red;
+	font-size: 60px; 
+	font-weight: bold;
+	
+	padding: 0 10px;
+}
+
+/*==========
+#prologue
+==========*/
+main #prologue {
+	background: #333 url(../img/prologue_bg.jpg) no-repeat center center;
+	z-index: 8;
+}
+
+#prologue .big5,
+#prologue .big6 {
+	font-size: 40px;
+	font-weight: bold;
+	text-shadow: 0px 3px 5px #000;
+}
+
+#prologue .big5 {
+	color: red;
+}
+
+#prologue .big6 {
+	color: green;
+}
+
+
+#genleSelect {
+	width: 700px;
+	height: 155px;
+	position: absolute;
+	top: 80px;
+	left: 100px;
+	text-align: center;
+	letter-spacing: -0.4em;
+}
+
+#genleSelect li {
+	width: 221px;
+	height: 55px;
+	margin: 10px 5px;
+	display: inline-block;
+	letter-spacing: normal;
+	line-height: 100px;
+	cursor: pointer;
+}
+
+#genleSelect li:hover {
+	opacity: 0.8;
+}
+
+/*==========
+#quiz
+==========*/
+main #quiz {
+	background: url(../img/quiz_bg.jpg) no-repeat center center;
+	z-index: 7;
+}
+
+main #quiz.boss {
+	background: url(../img/boss_room.jpg) no-repeat center center;
+}
+
+#quiz .lifepoint {
+	width: 170px;
+	height: 50px;
+	text-align: center;
+	letter-spacing: -0.4em;
+	margin: 20px 0 0 20px;
+}
+
+.lifepoint li {
+	float: left;
+	letter-spacing: normal;
+}
+
+#quiz .quiz1,
+#quiz .quiz2,
+#quiz .quiz3,
+#quiz .quiz4,
+#quiz .quiz5 {
+	width: 715px;
+	height: 500px;
+	position: absolute;
+	top: 25px;
+	left: 100px;
+}
+
+#quiz .quiz1 {
+	background: url(../img/zako.png) no-repeat top center;
+}
+
+#quiz .quiz2 {
+	background: url(../img/boss1.png) no-repeat top center;
+}
+
+#quiz .quiz3 {
+	background: url(../img/boss1_2.png) no-repeat top center;
+}
+
+#quiz .quiz4 {
+	background: url(../img/boss2.png) no-repeat top center;
+}
+
+#quiz .quiz5 {
+	background: url(../img/lastboss.png) no-repeat top center;
+}
+
+#quiz section div h2 {
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 0 0 10px #000;
+	position: absolute;
+	top: -5px;
+	left: 95px;
+}
+
+#quiz .question {
+	color: #fff;
+	width: 720px;
+	height: 250px;
+	position: absolute;
+	bottom: 0;
+	letter-spacing: -0.4em;
+	font-size: 20px;
+	text-align: center;
+}
+
+.question dt,
+.question dd {
+	background: rgba(0,0,0,0.8);
+	border-radius: 12px;
+	letter-spacing: normal;
+	text-align: center;
+}
+
+.question dt {
+	padding: 30px 10px;
+	margin-top: 40px;
+}
+
+.question dd {
+	width: 340px;
+	margin: 5px 10px 0 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.question dd span {
+	font-size: 25px;
+	margin-right: 10px;
+}
+
+.question dd.falseSelect:after {
+	content: "";
+	display: block;
+	background: url(../img/false.png) no-repeat center center;
+	width: 445px;
+	height: 445px;
+	position: absolute;
+	top: -230px;
+	right: 140px;
+}
+
+.question dd.trueSelect:after {
+	content: "";
+	display: block;
+	background: url(../img/true.png) no-repeat center center;
+	width: 445px;
+	height: 445px;
+	position: absolute;
+	top: -230px;
+	right: 140px;
+}
+
+/*==========
+#epilogue
+==========*/
+main #epilogue {
+	background: url(../img/epilogue_bg.jpg) no-repeat center center;
+	z-index: 6;
+}
+
+#epilogue .serif {
+	color: #fff;
+}
+
+/*==========
+#gameover
+==========*/
+main #gameover {
+	color: #fff;
+	background: url(../img/gameover_bg.jpg) no-repeat center center;
+	text-align: center;
+	z-index: 5;
+}
+
+#gameover .inner {
+	margin-top: 100px;
+}
+
+#gameover p {
+  width: 850px;
+  font-size: 20px;
+  margin: auto;
+}
+
+#gameover .continue {
+	margin-top: 130px;
+}
+
+.continue li {
+	line-height: 2.0;
+	cursor: pointer;
+	font-size: 18px;
+	margin: auto;
+}
+
+.continue .backTitle {
+	width: 210px;
+} 
+
+.continue .backQuiz {
+	width: 230px;
+} 
+
+.continue li:hover {
+	color: #ff6565;
+	background: url(../img/icon.png) no-repeat left center;
+}
+
+/*==========
+#endroll
+==========*/
+#endroll {
+	background: url(../img/endroll_bg.png) no-repeat;
+	color: #fff;
+	text-align: center;
+	overflow: hidden;
+	z-index: 4;
+}
+
+#endroll .mmm {
+	position: absolute;
+	width: 910px;
+}
+
+#endroll h2 {
+	font-size: 30px;
+}
+
+#endroll dl {
+	margin-top: 500px;
+}
+ 
+#endroll dt {
+	color: pink;
+	font-size: 25px;
+	margin-top: 70px;
+}
+
+#endroll dd {
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+#endroll .continue {
+	margin: 500px 0 250px 0;
+}

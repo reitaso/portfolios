@@ -1,0 +1,32 @@
+.links {
+		padding-bottom: 20px;
+		border-top:  #c8e1ff 10px solid;
+		border-bottom: #a5cdff 3px solid;
+		margin-bottom: 50px;
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+.main h2 {
+		color: #2a2c74;
+		text-align: center;
+	}
+.link,
+.osirase {
+		padding-left: 30px;
+	}
+.osirase {
+		padding-top: 100px;
+		padding-left: 200px;
+	}
+.link {
+		border-top:  #c8e1ff 2px solid;
+		margin-bottom: 10px;
+		
+	}
+.links p {
+		color: #7576a8;
+		padding: 10px 30px;
+	}
+a {
+		text-decoration: none;
+	}
+
